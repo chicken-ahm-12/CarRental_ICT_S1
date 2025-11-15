@@ -1,0 +1,25 @@
+
+.mode {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    transition: background-image 3s;
+}
+
+.mode.dark {
+    background-image: url("images/lightmode.png");
+}
+
+.mode.light {
+    background-image: url("images/darkmode.png");
+}
+
+.navbar {
+    background-color: #BF1A1A !important;
+}
+
+.btn {
+    color:  #E8E8E8 ;
+}
