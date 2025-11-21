@@ -8,14 +8,6 @@
     transition: background-image 3s;
 }
 
-.mode.dark {
-    background-image: url("images/lightmode.png");
-}
-
-.mode.light {
-    background-image: url("images/darkmode.png");
-}
-
 .navbar {
     background-color: #BF1A1A !important;
 }
@@ -23,6 +15,9 @@
 .btn {
     color:  #E8E8E8 ;
 }
-body {
-    padding-top: 70px;
+
+.carousel-inner {
+    max-height: 50% !important;
+    max-width: 100%;
+    display: flex;
 }
