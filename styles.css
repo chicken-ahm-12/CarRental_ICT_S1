@@ -10,6 +10,9 @@
 
 .navbar {
     background-color: #BF1A1A !important;
+    border-radius: 30px;
+    width: 80%;
+    margin-top: 2%;
 }
 
 .btn {
@@ -20,4 +23,9 @@
     max-height: 50% !important;
     max-width: 100%;
     display: flex;
+}
+
+.carousel-item img {
+  
+  transition: filter 0.3s ease-in-out; /* Smooth transition for the effect */
 }
