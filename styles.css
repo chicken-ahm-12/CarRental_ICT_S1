@@ -25,7 +25,7 @@
 }
 
 #mainNavbar {
-    background-color: rgba(9, 18, 44, 0.8) !important;
+    background-color: rgba(9, 18, 44) !important;
     box-shadow: rgba(207, 15, 71, 0.6) 0px 4px 16px, rgba(207, 15, 71, 0.6) 0px 8px 24px, rgba(207, 15, 71, 0.6) 0px 16px 56px;
     z-index: 1000;
     font-weight: bold !important;
@@ -290,7 +290,7 @@
 
 .normal-section {
     position: relative;
-    max-height: 100vh;
+    max-height: auto;
     width: 100%;
     border-bottom: 20px solid #cf0f47;
 }
