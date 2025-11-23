@@ -1,0 +1,14 @@
+<svg width="400" height="120" viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg">
+    <!-- Car Icon -->
+    <path d="M80,70 L60,70 L55,60 L45,60 L40,70 L20,70 L20,50 L35,45 L35,40 L25,35 L30,25 L50,25 L55,35 L65,35 L70,25 L90,25 L95,35 L85,40 L85,45 L100,50 L100,70 Z" fill="#2E86AB"/>
+    <circle cx="40" cy="75" r="8" fill="#333"/>
+    <circle cx="80" cy="75" r="8" fill="#333"/>
+    <path d="M35,45 L65,45 L65,40 L35,40 Z" fill="#F7F7F7"/>
+    
+    <!-- DriveEase Text -->
+    <text x="120" y="50" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#2E86AB">Drive</text>
+    <text x="120" y="85" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#333">Ease</text>
+    
+    <!-- Tagline -->
+    <text x="120" y="105" font-family="Arial, sans-serif" font-size="14" fill="#666">Premium Car Rental</text>
+</svg>

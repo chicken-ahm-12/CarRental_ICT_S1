@@ -6,62 +6,152 @@
     <title>Car Rental</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link href="styles.css" rel="stylesheet">
-
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="script.js" type="text/javascript" defer></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark fixed-top">
+    <!-- Page content goes here -->
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top navbar-dark" id="mainNavbar">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">redbanner</a>
+            <a class="navbar-brand" href="index.html">
+                <i class="custom-icon logo"></i>
+            </a>
+            DriveEase
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                         <button type="button" class="btn">About Us</button>
+                         <button type="button" class="btn" id="home_btn">Home</button>
                     </li>
                     <li class="nav-item">
-                        <button type="button" class="btn">Contact Us</button>
+                        <button type="button" class="btn" id="contact_btn">Contact Us</button>
                     </li>
                 </ul>
-
             </div>
         </div>
-    </nav>
+    </nav> 
 
-    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <!-- Hero Section with Carousel and Overlay Content -->
+    <section class="hero-section">
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicators (little dots) -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"></button>
+            </div>
 
-  <!-- Indicators (little dots) -->
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></button>
-    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"></button>
-    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"></button>
-  </div>
+            <!-- Images -->
+            <div class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner" data-bs-ride="carousel">
+                    <div class="carousel-item active">
+                        <img src="https://images.pexels.com/photos/34759941/pexels-photo-34759941.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://images.pexels.com/photos/4512439/pexels-photo-4512439.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://images.pexels.com/photos/4141954/pexels-photo-4141954.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+            </div>
+          
+            <!-- Controls (Prev/Next arrows) -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
 
-  <!-- Images -->
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="https://images.pexels.com/photos/34759941/pexels-photo-34759941.jpeg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="https://images.pexels.com/photos/4512439/pexels-photo-4512439.jpeg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="https://images.pexels.com/photos/1461887/pexels-photo-1461887.jpeg?cs=srgb&dl=pexels-vladalex94-1461887.jpg&fm=jpg" class="d-block w-100" alt="...">
-    </div>
-  </div>
+        <!-- Content Overlay on Carousel -->
+        <div class="carousel-overlay">
+            <div class="overlay-content">
+                <h1 class="display-4 fw-bold">Premium Car Rental</h1>
+                <p class="lead">Experience luxury and performance with our exclusive fleet</p>
+            </div>
+        </div>
+    </section>
 
-  <!-- Controls (Prev/Next arrows) -->
-  <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </button>
+    <!-- Video Background Section -->
+    <section class="normal-section">
+        <div class="pageBG">
+            <video autoplay muted loop id="bgvideo">
+                <source src="videos/BMW M3 Competition - 4K Cinematic Short Video - Damir Who (1080p, h264).mp4" type="video/mp4">
+            </video>
+            <div class="head-container">
+                <h1 class="section-title">CAR TYPES</h1>
+            </div>
+            <div class="container">
+                <div class="card cartype" id="TSUV">
+                    <a href="suv.html">
+                        <img src="https://images.pexels.com/photos/2676096/pexels-photo-2676096.jpeg" class="card-img" alt="...">
+                    </a>
+                    <div class="card-body">
+                    <h1 class="card-text">SUV</h1>
+                    </div>
+                </div>
+                <div class="card cartype" id="TSEDAN">
+                    <a href="sedan.html">
+                        <img src="https://images.pexels.com/photos/10385801/pexels-photo-10385801.jpeg" class="card-img-top" alt="...">
+                    </a>
+                    <div class="card-body">
+                    <h1 class="card-text">SEDAN</p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </section>
 
-  <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </button>
-</div>
+    <!--About Us-->
+    <section class="normal-section" id="aboutus">
+        <div class="info-cont">
+            <h1 class="section-title">About Us</h1>
+            <br><br>
+            <p>Welcome to DriveEase! We’re more than just a car rental company—we’re your travel companion. From weekend getaways to business trips,
+                we make sure you get the right car, at the right time, without any stress.</p>
+                <br>
+            <p>Founded on a passion for travel and a love for cars, we aim to make every ride enjoyable and every customer experience effortless. With a wide selection of vehicles, competitive rates,
+                and a team that genuinely cares, we’re here to keep you moving—safely and comfortably.</p>
+                <br>
+            <p>Let’s get you behind the wheel and on the road. Adventure awaits!</p>
+        </div>
+    </section>
 
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>DriveEase</h3>
+                <p>Premium car rental service offering luxury vehicles for business and leisure travel.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="index.html#aboutus">About Us</a>
+                <a href="contactus.html">Contact</a>
+            </div>
+            <div class="footer-column">
+                <h3>Location</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Block J, North Nazimabad Town, Karachi, Pakistan</p>
+                <p><i class="fas fa-phone"></i> +92 21 112 122 115</p>
+                <p><i class="fas fa-envelope"></i> info@driveease.com</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21063.785972391866!2d67.05631599732469!3d24.946269426684037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb338b808bfd6b1%3A0x997b1a02c2570822!2sGulshan-e-Iqbal%2C%20Karachi%2C%20Pakistan!5e0!3m2!1sen!2s!4v1763912669090!5m2!1sen!2s" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 DriveEase. All rights reserved.</p>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
 </body>
