@@ -4,7 +4,7 @@
 .pageBG {
     position: relative;
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     background-color: #09122c;
     overflow: hidden;
     
@@ -280,7 +280,7 @@
 .container {
     position: relative;
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -291,7 +291,7 @@
 .normal-section {
     position: relative;
     max-height: auto;
-    width: 100%;
+    width: 100vw;
     border-bottom: 20px solid #cf0f47;
 }
 
