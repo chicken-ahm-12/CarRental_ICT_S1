@@ -440,6 +440,42 @@ body {
 
 
 /* Responsive Design */
+@media (max-width: 1200px) {
+    .cars-container {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 1.5rem;
+        padding-top: 80px;
+    }
+    
+    .container {
+        height: auto;
+        flex-direction: column;
+        padding: 2rem 0;
+    }
+    
+    .cartype {
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .info-cont {
+        width: 90%;
+        padding-left: 5%;
+        height: auto;
+    }
+    
+    .head-container {
+        padding-top: 5rem;
+    }
+    
+    .cars-container {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 1.2rem;
+    }
+}
+
 @media (max-width: 768px) {
     .carousel-overlay {
         padding: 1rem;
@@ -464,6 +500,162 @@ body {
     }
     
     .car-card {
+        height: 250px;
+    }
+    
+    .cars-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 2rem 1rem;
+    }
+    
+    .container {
+        height: auto;
+        gap: 2rem;
+    }
+    
+    .cartype {
+        width: 90%;
+        height: auto;
+    }
+    
+    .info-cont {
+        width: 95%;
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+    }
+    
+    .info-cont p {
+        font-size: medium;
+    }
+    
+    .head-container h1 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 1.5rem;
+    }
+    
+    .social-icons {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .pageBG {
+        height: 50vh;
+    }
+    
+    .hero-section {
+        height: 50vh;
+    }
+    
+    .carousel-inner {
+        height: 50vh;
+    }
+    
+    .carousel-item img {
+        height: 50vh;
+    }
+    
+    .overlay-content {
+        padding: 1rem;
+    }
+    
+    .overlay-content h1 {
+        font-size: 1.5rem;
+    }
+    
+    .overlay-content .lead {
+        font-size: 1rem;
+    }
+    
+    .car-card {
         height: 200px;
+    }
+    
+    .car-name {
+        font-size: 1.2rem;
+    }
+    
+    .car-price {
+        font-size: 1rem;
+    }
+    
+    .car-features {
+        flex-wrap: wrap;
+    }
+    
+    .car-features li {
+        margin-right: 0.5rem;
+        margin-bottom: 0.5rem;
+        font-size: 0.8rem;
+    }
+    
+    .custom-icon {
+        height: 48px;
+        width: 48px;
+    }
+    
+    .head-container {
+        padding-top: 3rem;
+    }
+    
+    .head-container h1 {
+        font-size: 1.5rem;
+    }
+    
+    .normal-section {
+        border-bottom-width: 10px;
+    }
+    
+    footer {
+        padding: 2rem 1rem;
+    }
+    
+    .footer-column h3 {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .copyright {
+        margin-top: 2rem;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .cars-container {
+        padding: 1rem 0.5rem;
+    }
+    
+    .car-card {
+        height: 180px;
+    }
+    
+    .car-details {
+        padding: 1rem;
+    }
+    
+    .car-name {
+        font-size: 1.1rem;
+    }
+    
+    .rent-button {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+    }
+    
+    .overlay-content h1 {
+        font-size: 1.3rem;
+    }
+    
+    .btn {
+        font-size: 0.9rem;
+        padding: 0.6rem 1.2rem;
     }
 }
